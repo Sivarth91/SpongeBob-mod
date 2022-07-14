@@ -96,7 +96,7 @@ public class PatrickEntity extends AnimalEntity {
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.;
+        return SoundEvents.PUFFER_FISH_AMBIENT;
     }
 
     /**
@@ -106,7 +106,7 @@ public class PatrickEntity extends AnimalEntity {
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.PHANTOM_DEATH;
+        return SoundEvents.PUFFER_FISH_DEATH;
     }
 
     /**
@@ -117,7 +117,7 @@ public class PatrickEntity extends AnimalEntity {
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource damageSource) {
-        return SoundEvents.PHANTOM_HURT;
+        return SoundEvents.PUFFER_FISH_HURT;
     }
 
     /**
