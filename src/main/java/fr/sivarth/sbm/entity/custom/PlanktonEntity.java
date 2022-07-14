@@ -26,7 +26,7 @@ import javax.annotation.Nullable;
 public class PlanktonEntity extends AnimalEntity {
 
     private static final Ingredient TEMPTATION_INGREDIENT = Ingredient.of(ModItems.SPATULA.get());
-    private int patrickTimer;
+    private int planktonTimer;
 
     public PlanktonEntity(EntityType<? extends AnimalEntity> type, World world) {
         super(type, world);
@@ -96,7 +96,7 @@ public class PlanktonEntity extends AnimalEntity {
     @Override
     public void aiStep() {
         if (this.level.isClientSide) {
-            this.patrickTimer = Math.max(0, this.patrickTimer - 1);
+            this.planktonTimer = Math.max(0, this.planktonTimer - 1);
         }
         super.aiStep();
     }
@@ -104,7 +104,7 @@ public class PlanktonEntity extends AnimalEntity {
     @OnlyIn(Dist.CLIENT)
     public void handleEntityEvent(byte id) {
         if (id == 10) {
-            this.patrickTimer = 40;
+            this.planktonTimer = 40;
         } else {
             super.handleEntityEvent(id);
         }

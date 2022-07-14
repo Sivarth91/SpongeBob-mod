@@ -27,7 +27,7 @@ public class GaryEntity extends AnimalEntity {
 
     private static final Ingredient TEMPTATION_INGREDIENT = Ingredient.of(ModItems.SPATULA.get());
     private EatGrassGoal eatGrassGoal;
-    private int patrickTimer;
+    private int garyTimer;
 
     /**
      *
@@ -136,14 +136,14 @@ public class GaryEntity extends AnimalEntity {
 
     @Override
     protected void customServerAiStep() {
-        this.patrickTimer = this.eatGrassGoal.getEatAnimationTick();
+        this.garyTimer = this.eatGrassGoal.getEatAnimationTick();
         super.customServerAiStep();
     }
 
     @Override
     public void aiStep() {
         if (this.level.isClientSide) {
-            this.patrickTimer = Math.max(0, this.patrickTimer - 1);
+            this.garyTimer = Math.max(0, this.garyTimer - 1);
         }
         super.aiStep();
     }
@@ -155,7 +155,7 @@ public class GaryEntity extends AnimalEntity {
     @OnlyIn(Dist.CLIENT)
     public void handleEntityEvent(byte id) {
         if (id == 10) {
-            this.patrickTimer = 40;
+            this.garyTimer = 40;
         } else {
             super.handleEntityEvent(id);
         }
