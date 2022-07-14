@@ -1,0 +1,33 @@
+{
+    "itemGroup.spongeBobMod": "Sponge Bob Mod",
+
+    "item.sbm.spatula": "Spatula",
+    "item.sbm.aluminium_ingot": "aluminium ingot",
+    "item.sbm.aluminium_plate": "aluminium plate",
+    "item.sbm.banknote": "banknote",
+    "item.sbm.cash_register_screen": "cash register screen",
+    "item.sbm.cash_register_button": "cash register button",
+    "item.sbm.hotplate": "hotplate",
+    "item.sbm.paving_stone": "paving stone",
+    "item.sbm.aluminium_sword": "aluminium sword",
+    "item.sbm.aluminium_pickaxe": "aluminium pickaxe",
+    "item.sbm.aluminium_axe": "aluminium axe",
+    "item.sbm.aluminium_hoe": "aluminium hoe",
+    "item.sbm.aluminium_shovel": "aluminium shovel",
+    "item.sbm.pineapple": "pineapple",
+
+    "block.sbm.pineapple_block": "pineapple block",
+    "block.sbm.pineapple_leaves": "pineapple leaves",
+    "block.sbm.tube": "tube",
+    "block.sbm.aluminium_ore": "aluminium ore",
+    "block.sbm.aluminium_block": "aluminium block",
+    "block.sbm.sand_road": "sand road",
+    "block.sbm.window": "window",
+    "block.sbm.round_window": "round window",
+    "block.sbm.aluminium_wall_block": "aluminium wall block",
+    "block.sbm.aluminium_floor": "aluminium floor",
+    "block.sbm.panelling": "panelling",
+
+    "entity.sbm.sponge_bob": "sponge bob"
+
+}

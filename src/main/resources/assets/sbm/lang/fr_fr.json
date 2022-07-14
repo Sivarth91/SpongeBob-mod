@@ -1,0 +1,32 @@
+{
+    "itemGroup.spongeBobMod": "Sponge Bob Mod",
+
+    "item.sbm.spatula": "Spatule",
+    "item.sbm.aluminium_ingot": "lingot d'aluminium",
+    "item.sbm.aluminium_plate": "plaque d'aluminium",
+    "item.sbm.banknote": "billet de banque",
+    "item.sbm.cash_register_screen": "écran de caisse enregistreuse",
+    "item.sbm.cash_register_button": "bouton de caisse enregistreuse",
+    "item.sbm.hotplate": "plaque chauffante",
+    "item.sbm.paving_stone": "pavé",
+    "item.sbm.aluminium_sword": "épée en aluminium",
+    "item.sbm.aluminium_pickaxe": "pioche aluminium",
+    "item.sbm.aluminium_axe": "hache en aluminium",
+    "item.sbm.aluminium_hoe": "houe en aluminium",
+    "item.sbm.aluminium_shovel": "pelle en aluminium",
+    "item.sbm.pineapple": "ananas",
+
+    "block.sbm.pineapple_block": "pineapple block",
+    "block.sbm.pineapple_leaves": "pineapple leaves",
+    "block.sbm.tube": "tube",
+    "block.sbm.aluminium_ore": "minerai d'aluminium",
+    "block.sbm.aluminium_block": "bloc d'aluminium",
+    "block.sbm.sand_road": "route de sable",
+    "block.sbm.window": "fenêtre",
+    "block.sbm.round_window": "fenêtre ronde",
+    "block.sbm.aluminium_wall_block": "bloc de mur en aluminium",
+    "block.sbm.aluminium_floor": "sol en aluminium",
+    "block.sbm.panelling": "lambris"
+
+
+}
