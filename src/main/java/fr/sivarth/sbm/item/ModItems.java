@@ -43,6 +43,6 @@ public class ModItems {
     public static final RegistryObject<ModSpawnEggItem> SPONGE_BOB_SPAWN_EGG = ITEMS.register("sponge_bob_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.SPONGE_BOB, 0xFFF244, 0x716D44, new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
     public static final RegistryObject<ModSpawnEggItem> PATRICK_SPAWN_EGG = ITEMS.register("patrick_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.PATRICK, 0xFF808B, 0x176128, new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
     public static final RegistryObject<ModSpawnEggItem> GARY_SPAWN_EGG = ITEMS.register("gary_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.GARY, 0xD5A4DA, 0xA4DAD9, new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
-
+    public static final RegistryObject<ModSpawnEggItem> PLANKTON_SPAWN_EGG = ITEMS.register("plankton_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.PLANKTON, 0x29552D, 0xE4CF8C, new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
 
 }
