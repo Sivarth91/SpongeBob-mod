@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "sbm:item/aluminium_pickaxe"
+    }
+}
