@@ -33,9 +33,6 @@ public class SBM {
     }
 
     private void setup(final FMLCommonSetupEvent e) {
-        ModFeatures features = new ModFeatures();
-        features.init();
-        MinecraftForge.EVENT_BUS.register(features);
 
         DeferredWorkQueue.runLater(() -> {
             GlobalEntityTypeAttributes.put(ModEntityTypes.SPONGE_BOB.get(), SpongeBobEntity.setCustomAttributes().build());
