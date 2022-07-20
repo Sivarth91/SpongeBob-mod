@@ -1,6 +1,7 @@
 package fr.sivarth.sbm.world;
 
 import fr.sivarth.sbm.SBM;
+import fr.sivarth.sbm.world.gen.ModOreGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -10,11 +11,11 @@ public class ModWorldEvents {
 
     /**
      *
-     * @param e
+     * @param event
      */
     @SubscribeEvent
-    public static void biomeLoadingEvent(final BiomeLoadingEvent e) {
-        
+    public static void biomeLoadingEvent(final BiomeLoadingEvent event) {
+        ModOreGeneration.generateOres(event);
     }
 
 
