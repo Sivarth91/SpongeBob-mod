@@ -1,8 +1,6 @@
 /build
 /run
-/gradle
 .idea
-.gradle
 
 # Compiled class file
 *.class
