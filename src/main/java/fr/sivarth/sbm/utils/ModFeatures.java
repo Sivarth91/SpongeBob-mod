@@ -15,13 +15,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class ModFeatures {
 
-    /**
-     *
-     * @param name
-     * @param feature
-     * @return feature registering
-     * @param <FC>
-     */
+    /*
+
     public static final <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> registerFeature(String name, ConfiguredFeature<FC, ?> feature) {
         return Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, name, feature);
     }
@@ -33,10 +28,7 @@ public class ModFeatures {
         ALUMINIUM_ORE_FEATURE = registerFeature("ore_aluminium", Feature.ORE.configured(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.ALUMINIUM_BLOCK.get().getBlock().defaultBlockState(), 10)));
     }
 
-    /**
-     *
-     * @param event
-     */
+
     @SubscribeEvent
     public void biomeLoading(BiomeLoadingEvent event) {
         BiomeGenerationSettingsBuilder generation = event.getGeneration();
@@ -45,4 +37,6 @@ public class ModFeatures {
             generation.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, ALUMINIUM_ORE_FEATURE);
         }
     }
+     */
+
 }
