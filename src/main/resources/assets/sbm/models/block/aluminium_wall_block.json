@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "sbm:block/aluminium_wall"
+        "all": "sbm:block/aluminium_wall_block"
     }
 }
