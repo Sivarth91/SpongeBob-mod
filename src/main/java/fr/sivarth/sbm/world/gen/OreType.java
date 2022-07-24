@@ -20,22 +20,44 @@ public enum OreType {
         this.maxHeight = maxHeight;
     }
 
+    /**
+     *
+     * @returnv block
+     */
     public Lazy<Block> getBlock() {
         return block;
     }
 
+    /**
+     *
+     * @return maxVeinSize
+     */
     public int getMaxVeinSize() {
         return maxVeinSize;
     }
 
+    /**
+     *
+     * @return minHeight
+     */
     public int getMinHeight() {
         return minHeight;
     }
 
+    /**
+     *
+     * @return maxHeight
+     */
     public int getMaxHeight() {
         return maxHeight;
     }
 
+    /**
+     *
+     * @param block
+     * @return ore
+     * @return null
+     */
     public static OreType get(Block block) {
         for (OreType ore : values()) {
             if (block == ore.block) {

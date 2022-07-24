@@ -13,10 +13,21 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 public class ModOreGeneration {
 
+    /**
+     *
+     * @param ore
+     * @param oreFeatureConfig
+     * @param configuredPlacement
+     * @return ore registry
+     */
     private static ConfiguredFeature<?, ?> registerOreFeature( OreType ore, OreFeatureConfig oreFeatureConfig, ConfiguredPlacement configuredPlacement) {
         return Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, ore.getBlock().get().getRegistryName(), Feature.ORE.configured(oreFeatureConfig).decorated(configuredPlacement).squared().count(ore.getMaxVeinSize()));
     }
 
+    /**
+     *
+     * @param event
+     */
     public static void generateOres(final BiomeLoadingEvent event) {
         for (OreType ore : OreType.values()) {
             OreFeatureConfig oreFeatureConfig = new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, ore.getBlock().get().defaultBlockState(), ore.getMaxVeinSize());
