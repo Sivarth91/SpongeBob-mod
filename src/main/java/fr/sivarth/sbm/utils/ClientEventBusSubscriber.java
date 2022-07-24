@@ -39,8 +39,4 @@ public class ClientEventBusSubscriber {
         ModSpawnEggItem.initSpawnEggs();
     }
 
-
-
-
-
 }
