@@ -1,6 +1,7 @@
 package fr.sivarth.sbm.world;
 
 import fr.sivarth.sbm.SBM;
+import fr.sivarth.sbm.world.gen.ModEntitySpawns;
 import fr.sivarth.sbm.world.gen.ModOreGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
