@@ -5,7 +5,6 @@ import fr.sivarth.sbm.entity.custom.GaryEntity;
 import fr.sivarth.sbm.entity.custom.PatrickEntity;
 import fr.sivarth.sbm.entity.custom.PlanktonEntity;
 import fr.sivarth.sbm.entity.custom.SpongeBobEntity;
-import net.minecraft.client.renderer.entity.model.ZombieModel;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.util.ResourceLocation;
