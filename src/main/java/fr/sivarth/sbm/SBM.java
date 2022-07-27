@@ -34,9 +34,9 @@ public class SBM {
 
     /**
      *
-     * @param e
+     * @param event
      */
-    private void setup(final FMLCommonSetupEvent e) {
+    private void setup(final FMLCommonSetupEvent event) {
 
         DeferredWorkQueue.runLater(() -> {
             GlobalEntityTypeAttributes.put(ModEntityTypes.SPONGE_BOB.get(), SpongeBobEntity.setCustomAttributes().build());
@@ -48,10 +48,10 @@ public class SBM {
 
     /**
      *
-     * @param e
+     * @param event
      */
-    private void clientSetup(FMLClientSetupEvent e) {
-        e.enqueueWork(() -> {
+    private void clientSetup(FMLClientSetupEvent event) {
+        event.enqueueWork(() -> {
             RenderTypeLookup.setRenderLayer(ModBlocks.ONIONS.get(), RenderType.cutout());
         });
     }
