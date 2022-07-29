@@ -22,7 +22,7 @@ public enum OreType {
 
     /**
      *
-     * @returnv block
+     * @return block
      */
     public Lazy<Block> getBlock() {
         return block;
