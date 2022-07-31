@@ -53,6 +53,7 @@ public class SBM {
     private void clientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             RenderTypeLookup.setRenderLayer(ModBlocks.ONIONS.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.TOMATOES.get(), RenderType.cutout());
         });
     }
 
