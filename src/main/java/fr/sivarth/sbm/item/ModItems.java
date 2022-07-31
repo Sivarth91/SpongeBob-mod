@@ -8,6 +8,7 @@ import fr.sivarth.sbm.item.custom.ModSpawnEggItem;
 import fr.sivarth.sbm.item.custom.SpatulaItem;
 import fr.sivarth.sbm.item.custom.food.PineappleItem;
 import fr.sivarth.sbm.item.custom.food.SodaItem;
+import fr.sivarth.sbm.item.custom.food.TomatoItem;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -41,6 +42,10 @@ public class ModItems {
     public static final RegistryObject<PineappleItem> PINEAPPLE = ITEMS.register("pineapple", PineappleItem::new);
     public static final RegistryObject<SodaItem> SODA = ITEMS.register("soda", SodaItem::new);
     public static final RegistryObject<Item> ONIONS = ITEMS.register("onions", () -> new BlockItem(ModBlocks.ONIONS.get(), new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP).food(new Food.Builder().nutrition(1).saturationMod(0.1f).alwaysEat().fast().build())));
+    public static final RegistryObject<Item> TOMATOES = ITEMS.register("tomatoes", TomatoItem::new);
+    public static final RegistryObject<Item> TOMATOES_SEEDS = ITEMS.register("tomatoes_seeds", () -> new BlockItem(ModBlocks.TOMATOES.get(), new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
+
+
 
     // armors
 

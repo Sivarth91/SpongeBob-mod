@@ -3,6 +3,7 @@ package fr.sivarth.sbm.block;
 import fr.sivarth.sbm.SBM;
 import fr.sivarth.sbm.block.custom.AluminiumOre;
 import fr.sivarth.sbm.block.custom.OnionBlock;
+import fr.sivarth.sbm.block.custom.TomatoesBlock;
 import fr.sivarth.sbm.item.ModItemGroup;
 import fr.sivarth.sbm.item.ModItems;
 import net.minecraft.block.AbstractBlock;
@@ -46,5 +47,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(4.5f, 3.5f).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ALUMINIUM_ORE = registerBlock("aluminium_ore", AluminiumOre::new);
     public static final RegistryObject<Block> ONIONS = BLOCKS.register("onion_crops", () -> new OnionBlock(AbstractBlock.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<Block> TOMATOES = BLOCKS.register("tomato_crops", () -> new TomatoesBlock(AbstractBlock.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<Block> PATRICK_STONE = BLOCKS.register("patrick_stone", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(4.3f, 3.2f).harvestTool(ToolType.PICKAXE).harvestLevel(0).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
 
 }
