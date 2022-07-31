@@ -20,10 +20,10 @@ public class ClientEventBusSubscriber {
 
     /**
      *
-     * @param e
+     * @param event
      */
     @SubscribeEvent
-    public static void onClientSetup(FMLClientSetupEvent e) {
+    public static void onClientSetup(FMLClientSetupEvent event) {
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.SPONGE_BOB.get(), SpongeBobRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.PATRICK.get(), PatrickRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.GARY.get(), GaryRender::new);

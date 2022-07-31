@@ -49,31 +49,4 @@ public class ModEntitySpawns {
         }
     }
 
-
-
-
-
-
-
-
-
-    /*
-    public static void spawnEntity(FMLLoadCompleteEvent event) {
-        for (Biome biome : ForgeRegistries.BIOMES) {
-            if (biome.getBiomeCategory() == Biome.Category.NETHER) {
-             //nether entities spawn
-            } else if (biome.getBiomeCategory() == Biome.Category.THEEND) {
-                // end entities spawn
-            } else {
-                if (biome.getBiomeCategory() != Biome.Category.OCEAN) {
-                    biome.getMobSettings().getMobs(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(ModEntityTypes.SPONGE_BOB.get(), 10, 3, 5));
-                    biome.getMobSettings().getMobs(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(ModEntityTypes.PATRICK.get(), 10, 3, 5));
-                    biome.getMobSettings().getMobs(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(ModEntityTypes.GARY.get(), 10, 3, 5));
-                    biome.getMobSettings().getMobs(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(ModEntityTypes.PLANKTON.get(), 10, 3, 5));
-                }
-            }
-        }
-    }
-     */
-
 }

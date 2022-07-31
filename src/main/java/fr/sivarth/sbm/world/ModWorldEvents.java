@@ -7,7 +7,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = SBM.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = SBM.MODID)
 public class ModWorldEvents {
 
     /**
@@ -19,8 +19,5 @@ public class ModWorldEvents {
         ModOreGeneration.generateOres(event);
         ModEntitySpawns.onEntitySpawn(event);
     }
-
-
-
 
 }
