@@ -1,12 +1,15 @@
 package fr.sivarth.sbm;
 
 import fr.sivarth.sbm.block.ModBlocks;
+import fr.sivarth.sbm.container.ModContainers;
 import fr.sivarth.sbm.entity.ModEntityTypes;
-import fr.sivarth.sbm.entity.custom.GaryEntity;
-import fr.sivarth.sbm.entity.custom.PatrickEntity;
-import fr.sivarth.sbm.entity.custom.PlanktonEntity;
-import fr.sivarth.sbm.entity.custom.SpongeBobEntity;
+import fr.sivarth.sbm.entity.custom.*;
 import fr.sivarth.sbm.item.ModItems;
+import fr.sivarth.sbm.screen.CashRegisterScreen;
+import fr.sivarth.sbm.tileentity.ModTileEntities;
+import fr.sivarth.sbm.world.biome.ModBiomes;
+import fr.sivarth.sbm.world.gen.ModBiomeGeneration;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
@@ -29,7 +32,10 @@ public class SBM {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.ITEMS.register(bus);
         ModBlocks.BLOCKS.register(bus);
+        ModTileEntities.registerTileEntity(bus);
+        ModContainers.registerContainer(bus);
         ModEntityTypes.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModBiomes.registerBiomes(bus);
     }
 
     /**
@@ -43,6 +49,7 @@ public class SBM {
             GlobalEntityTypeAttributes.put(ModEntityTypes.PATRICK.get(), PatrickEntity.setCustomAttributes().build());
             GlobalEntityTypeAttributes.put(ModEntityTypes.GARY.get(), GaryEntity.setCustomAttributes().build());
             GlobalEntityTypeAttributes.put(ModEntityTypes.PLANKTON.get(), PlanktonEntity.setCustomAttributes().build());
+            GlobalEntityTypeAttributes.put(ModEntityTypes.SQUIDWARD.get(), SquidwardEntity.setCustomAttributes().build());
         });
     }
 
@@ -54,6 +61,10 @@ public class SBM {
         event.enqueueWork(() -> {
             RenderTypeLookup.setRenderLayer(ModBlocks.ONIONS.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.TOMATOES.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ROUND_WINDOW.get(), RenderType.cutout());
+            ScreenManager.register(ModContainers.CASH_REGISTER_CONTAINER.get(), CashRegisterScreen::new);
+
+            ModBiomeGeneration.generateBiomes();
         });
     }
 

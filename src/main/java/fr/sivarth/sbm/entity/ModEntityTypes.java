@@ -1,10 +1,7 @@
 package fr.sivarth.sbm.entity;
 
 import fr.sivarth.sbm.SBM;
-import fr.sivarth.sbm.entity.custom.GaryEntity;
-import fr.sivarth.sbm.entity.custom.PatrickEntity;
-import fr.sivarth.sbm.entity.custom.PlanktonEntity;
-import fr.sivarth.sbm.entity.custom.SpongeBobEntity;
+import fr.sivarth.sbm.entity.custom.*;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.util.ResourceLocation;
@@ -46,4 +43,8 @@ public class ModEntityTypes {
             .sized(1.0f, 1.0f)
             .build(new ResourceLocation(SBM.MODID, "plankton").toString()));
 
+    public static final RegistryObject<EntityType<SquidwardEntity>> SQUIDWARD = ENTITY_TYPES.register("squidward",
+        () -> EntityType.Builder.of(SquidwardEntity::new, EntityClassification.CREATURE)
+            .sized(1.0f, 2.3f)
+            .build(new ResourceLocation(SBM.MODID, "squidward").toString()));
 }
