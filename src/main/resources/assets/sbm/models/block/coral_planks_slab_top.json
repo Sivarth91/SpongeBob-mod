@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "sbm:block/coral_planks",
+        "top": "sbm:block/coral_planks",
+        "side": "sbm:block/coral_planks"
+    }
+}

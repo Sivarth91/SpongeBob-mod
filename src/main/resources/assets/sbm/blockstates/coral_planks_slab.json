@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "sbm:block/coral_planks_slab"
+        },
+        "type=double": {
+            "model": "sbm:block/coral_planks"
+        },
+        "type=top": {
+            "model": "sbm:block/coral_planks_slab_top"
+        }
+    }
+}
