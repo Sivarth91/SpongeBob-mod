@@ -52,7 +52,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CORAL_PLANKS_SLAB = registerBlock("coral_planks_slab", () -> new SlabBlock(AbstractBlock.Properties.of(Material.WOOD).strength(3.2f, 2.5f).harvestTool(ToolType.AXE).harvestLevel(0).sound(SoundType.WOOD)));
 
 
-    public static final RegistryObject<Block> ROUND_WINDOW = registerBlock("round_window", () -> new Block(AbstractBlock.Properties.of(Material.METAL)));
+    public static final RegistryObject<Block> ROUND_WINDOW = registerBlock("round_window", () -> new RoundWindowBlock(AbstractBlock.Properties.of(Material.METAL).strength(4.1f, 3.5f).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL).requiresCorrectToolForDrops()));
 
 
 

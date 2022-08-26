@@ -1,7 +1,19 @@
 {
     "variants": {
-        "":  {
+        "facing=north": {
             "model": "sbm:block/round_window"
+        },
+        "facing=south": {
+            "model": "sbm:block/round_window",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "sbm:block/round_window",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "sbm:block/round_window",
+            "y": 90
         }
     }
 }
