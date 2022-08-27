@@ -8,20 +8,24 @@ import net.minecraft.entity.Entity;
 
 public class GaryModel<T extends Entity> extends EntityModel<T> {
 
-    private final ModelRenderer head;
     private final ModelRenderer body;
+    private final ModelRenderer head;
 
     public GaryModel() {
-        texWidth = 32;
-        texHeight = 32;
-
-        head = new ModelRenderer(this);
-        head.setPos(0.0F, 24.0F, 0.0F);
-        head.texOffs(0, 10).addBox(-5.0F, -10.0F, -4.0F, 2.0F, 5.0F, 4.0F, 0.0F, false);
+        texWidth = 64;
+        texHeight = 64;
 
         body = new ModelRenderer(this);
         body.setPos(0.0F, 24.0F, 0.0F);
-        body.texOffs(0, 0).addBox(-3.0F, -6.0F, -4.0F, 9.0F, 6.0F, 4.0F, 0.0F, false);
+        body.texOffs(0, 18).addBox(-2.0F, -12.0F, -4.0F, 7.0F, 10.0F, 12.0F, 0.0F, false);
+        body.texOffs(0, 0).addBox(-2.0F, -2.0F, -8.0F, 7.0F, 2.0F, 16.0F, 0.0F, false);
+
+        head = new ModelRenderer(this);
+        head.setPos(0.0F, 24.0F, 0.0F);
+        head.texOffs(12, 7).addBox(-1.0F, -8.0F, -7.0F, 1.0F, 6.0F, 1.0F, 0.0F, false);
+        head.texOffs(12, 0).addBox(3.0F, -8.0F, -7.0F, 1.0F, 6.0F, 1.0F, 0.0F, false);
+        head.texOffs(0, 6).addBox(-2.0F, -11.0F, -8.0F, 3.0F, 3.0F, 3.0F, 0.0F, false);
+        head.texOffs(0, 0).addBox(2.0F, -11.0F, -8.0F, 3.0F, 3.0F, 3.0F, 0.0F, false);
     }
 
     @Override
@@ -31,8 +35,8 @@ public class GaryModel<T extends Entity> extends EntityModel<T> {
 
     @Override
     public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-        head.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
         body.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+        head.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
     }
 
     public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
