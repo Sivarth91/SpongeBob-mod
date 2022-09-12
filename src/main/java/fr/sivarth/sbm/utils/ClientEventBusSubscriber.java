@@ -2,10 +2,7 @@ package fr.sivarth.sbm.utils;
 
 import fr.sivarth.sbm.SBM;
 import fr.sivarth.sbm.entity.ModEntityTypes;
-import fr.sivarth.sbm.entity.render.GaryRender;
-import fr.sivarth.sbm.entity.render.PatrickRender;
-import fr.sivarth.sbm.entity.render.PlanktonRender;
-import fr.sivarth.sbm.entity.render.SpongeBobRender;
+import fr.sivarth.sbm.entity.render.*;
 import fr.sivarth.sbm.item.custom.ModSpawnEggItem;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -28,6 +25,7 @@ public class ClientEventBusSubscriber {
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.PATRICK.get(), PatrickRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.GARY.get(), GaryRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.PLANKTON.get(), PlanktonRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.CORAL_WOOD_BOAT.get(), ModBoatRenderer::new);
     }
 
     /**

@@ -3,6 +3,7 @@ package fr.sivarth.sbm.item;
 import fr.sivarth.sbm.SBM;
 import fr.sivarth.sbm.block.ModBlocks;
 import fr.sivarth.sbm.entity.ModEntityTypes;
+import fr.sivarth.sbm.item.custom.ModBoatItem;
 import fr.sivarth.sbm.item.custom.food.KrabbyPattyItem;
 import fr.sivarth.sbm.item.custom.ModSpawnEggItem;
 import fr.sivarth.sbm.item.custom.SpatulaItem;
@@ -56,4 +57,6 @@ public class ModItems {
     public static final RegistryObject<ModSpawnEggItem> GARY_SPAWN_EGG = ITEMS.register("gary_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.GARY, 0xD5A4DA, 0xA4DAD9, new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
     public static final RegistryObject<ModSpawnEggItem> PLANKTON_SPAWN_EGG = ITEMS.register("plankton_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.PLANKTON, 0x29552D, 0xE4CF8C, new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
 
+
+    public static final RegistryObject<Item> CORAL_WOOD_BOAT = ITEMS.register("coral_wood_boat", () -> new ModBoatItem(new Item.Properties().tab(ModItemGroup.SBM_ITEM_GROUP), "coral_wood"));
 }

@@ -47,4 +47,9 @@ public class ModEntityTypes {
         () -> EntityType.Builder.of(SquidwardEntity::new, EntityClassification.CREATURE)
             .sized(1.0f, 2.3f)
             .build(new ResourceLocation(SBM.MODID, "squidward").toString()));
+
+    public static final RegistryObject<EntityType<ModBoatEntity>> CORAL_WOOD_BOAT = ENTITY_TYPES.register("coral_wood_boat",
+        () -> EntityType.Builder.<ModBoatEntity>of(ModBoatEntity::new, EntityClassification.MISC)
+            .sized(0.5f, 0.5f)
+            .build(new ResourceLocation(SBM.MODID, "coral_wood_boat").toString()));
 }
