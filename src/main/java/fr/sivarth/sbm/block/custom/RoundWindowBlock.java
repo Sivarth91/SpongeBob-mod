@@ -9,7 +9,6 @@ import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.IBooleanFunction;
-import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
@@ -131,9 +130,22 @@ public class RoundWindowBlock extends HorizontalBlock {
         Block.box(7, 1, 1, 8, 16, 15)
     ).reduce((v1, v2) -> VoxelShapes.join(v1, v2, IBooleanFunction.OR)).get();
 
-    public RoundWindowBlock(Properties properties) {
-        super(properties);
+    /**
+     *
+     * @param builder
+     */
+
+    public RoundWindowBlock(Properties builder) {
+        super(builder);
     }
+
+    /**
+     *
+     * @param state
+     * @param worldIn
+     * @param pos
+     * @return shape
+     */
 
     @Override
     public VoxelShape getOcclusionShape(BlockState state, IBlockReader worldIn, BlockPos pos) {
@@ -151,29 +163,50 @@ public class RoundWindowBlock extends HorizontalBlock {
         }
     }
 
+    /**
+     *
+     * @param context
+     * @return blockstate
+     */
+
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
 
+    /**
+     *
+     * @param state
+     * @param rotation
+     * @return state
+     */
+
     @Override
     public BlockState rotate(BlockState state, Rotation rotation) {
         return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
     }
+
+    /**
+     *
+     * @param state
+     * @param mirrorIn
+     * @return mirror
+     */
 
     @Override
     public BlockState mirror(BlockState state, Mirror mirrorIn) {
         return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
     }
 
+    /**
+     *
+     * @param builder
+     */
+
     @Override
     protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
 
-    @Override
-    public VoxelShape getCollisionShape(BlockState p_220071_1_, IBlockReader p_220071_2_, BlockPos p_220071_3_, ISelectionContext p_220071_4_) {
-        return super.getCollisionShape(p_220071_1_, p_220071_2_, p_220071_3_, p_220071_4_);
-    }
 }
