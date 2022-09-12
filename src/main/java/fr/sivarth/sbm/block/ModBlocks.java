@@ -1,10 +1,7 @@
 package fr.sivarth.sbm.block;
 
 import fr.sivarth.sbm.SBM;
-import fr.sivarth.sbm.block.custom.AluminiumOre;
-import fr.sivarth.sbm.block.custom.OnionBlock;
-import fr.sivarth.sbm.block.custom.RoundWindowBlock;
-import fr.sivarth.sbm.block.custom.TomatoesBlock;
+import fr.sivarth.sbm.block.custom.*;
 import fr.sivarth.sbm.item.ModItemGroup;
 import fr.sivarth.sbm.item.ModItems;
 import net.minecraft.block.*;
@@ -53,7 +50,10 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> ROUND_WINDOW = registerBlock("round_window", () -> new RoundWindowBlock(AbstractBlock.Properties.of(Material.METAL).strength(4.1f, 3.5f).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL).requiresCorrectToolForDrops().air()));
+    public static final RegistryObject<Block> TELEVISION = registerBlock("television", () -> new TelevisionBlock(AbstractBlock.Properties.of(Material.METAL).strength(3.3f, 3.3f).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.GLASS).requiresCorrectToolForDrops().air()));
 
+    public static final RegistryObject<Block> ALUMINIUM_DOOR = registerBlock("aluminium_door", () -> new DoorBlock(AbstractBlock.Properties.of(Material.WOOD).strength(4.5f, 3.7f).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ALUMINIUM_TRAPDOOR = registerBlock("aluminium_trapdoor", () -> new TrapDoorBlock(AbstractBlock.Properties.of(Material.WOOD).strength(4.5f, 3.7f).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL).requiresCorrectToolForDrops()));
 
 
 

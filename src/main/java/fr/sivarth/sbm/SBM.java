@@ -56,6 +56,9 @@ public class SBM {
             RenderTypeLookup.setRenderLayer(ModBlocks.ONIONS.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.TOMATOES.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.ROUND_WINDOW.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ALUMINIUM_DOOR.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ALUMINIUM_TRAPDOOR.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.TELEVISION.get(), RenderType.cutout());
 
             ModBiomeGeneration.generateBiomes();
         });
