@@ -58,6 +58,8 @@ public class SBM {
             RenderTypeLookup.setRenderLayer(ModBlocks.ROUND_WINDOW.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.ALUMINIUM_DOOR.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.ALUMINIUM_TRAPDOOR.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.REINFORCED_ALUMINIUM_DOOR.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.REINFORCE_ALUMINIUM_TRAPDOOR.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.TELEVISION.get(), RenderType.cutout());
 
             ModBiomeGeneration.generateBiomes();

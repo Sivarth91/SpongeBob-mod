@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/door_bottom_rh",
+    "textures": {
+        "top": "sbm:block/reinforced_aluminium_door_top",
+        "bottom": "sbm:block/reinforced_aluminium_door_bottom"
+    }
+}
