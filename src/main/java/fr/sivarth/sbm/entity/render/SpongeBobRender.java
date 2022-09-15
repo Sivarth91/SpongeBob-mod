@@ -16,7 +16,7 @@ public class SpongeBobRender extends MobRenderer<SpongeBobEntity, SpongeBobModel
      * @param rendererManagerIn
      */
     public SpongeBobRender(EntityRendererManager rendererManagerIn) {
-        super(rendererManagerIn, new SpongeBobModel<>(), 0.7f);
+        super(rendererManagerIn, new SpongeBobModel<>(), 0.3f);
     }
 
     /**

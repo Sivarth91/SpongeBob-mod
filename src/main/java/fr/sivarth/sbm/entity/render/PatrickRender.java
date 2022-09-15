@@ -16,7 +16,7 @@ public class PatrickRender extends MobRenderer<PatrickEntity, PatrickModel<Patri
      * @param rendererManagerIn
      */
     public PatrickRender(EntityRendererManager rendererManagerIn) {
-        super(rendererManagerIn, new PatrickModel<>(), 0.9f);
+        super(rendererManagerIn, new PatrickModel<>(), 0.4f);
     }
 
     /**

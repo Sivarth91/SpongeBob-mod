@@ -25,22 +25,22 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<SpongeBobEntity>> SPONGE_BOB = ENTITY_TYPES.register("sponge_bob",
             () -> EntityType.Builder.of(SpongeBobEntity::new, EntityClassification.CREATURE)
-                    .sized(1.0f, 2.0f)
+                    .sized(0.5f, 1.7f)
                     .build(new ResourceLocation(SBM.MODID, "sponge_bob").toString()));
 
     public static final RegistryObject<EntityType<PatrickEntity>> PATRICK = ENTITY_TYPES.register("patrick",
         () -> EntityType.Builder.of(PatrickEntity::new, EntityClassification.CREATURE)
-            .sized(1.0f, 2.2f)
+            .sized(0.5f, 1.8f)
             .build(new ResourceLocation(SBM.MODID, "patrick").toString()));
 
     public static final RegistryObject<EntityType<GaryEntity>> GARY = ENTITY_TYPES.register("gary",
         () -> EntityType.Builder.of(GaryEntity::new, EntityClassification.CREATURE)
-            .sized(1.0f, 1.0f)
+            .sized(0.5f, 0.8f)
             .build(new ResourceLocation(SBM.MODID, "gary").toString()));
 
     public static final RegistryObject<EntityType<PlanktonEntity>> PLANKTON = ENTITY_TYPES.register("plankton",
         () -> EntityType.Builder.of(PlanktonEntity::new, EntityClassification.MONSTER)
-            .sized(1.0f, 1.0f)
+            .sized(0.5f, 1.2f)
             .build(new ResourceLocation(SBM.MODID, "plankton").toString()));
 
     public static final RegistryObject<EntityType<SquidwardEntity>> SQUIDWARD = ENTITY_TYPES.register("squidward",
