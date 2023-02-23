@@ -4,6 +4,7 @@ import fr.sivarth.sbm.block.ModBlocks;
 import fr.sivarth.sbm.entity.ModEntityTypes;
 import fr.sivarth.sbm.entity.custom.*;
 import fr.sivarth.sbm.item.ModItems;
+import fr.sivarth.sbm.tileentity.ModTileEntities;
 import fr.sivarth.sbm.world.biome.ModBiomes;
 import fr.sivarth.sbm.world.gen.ModBiomeGeneration;
 import net.minecraft.client.renderer.RenderType;
@@ -28,6 +29,7 @@ public class SBM {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.ITEMS.register(bus);
         ModBlocks.BLOCKS.register(bus);
+        ModTileEntities.TILE_ENTITIES.register(bus);
         ModEntityTypes.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
         ModBiomes.registerBiomes(bus);
     }
@@ -37,7 +39,6 @@ public class SBM {
      * @param event
      */
     private void setup(final FMLCommonSetupEvent event) {
-
         DeferredWorkQueue.runLater(() -> {
             GlobalEntityTypeAttributes.put(ModEntityTypes.SPONGE_BOB.get(), SpongeBobEntity.setCustomAttributes().build());
             GlobalEntityTypeAttributes.put(ModEntityTypes.PATRICK.get(), PatrickEntity.setCustomAttributes().build());

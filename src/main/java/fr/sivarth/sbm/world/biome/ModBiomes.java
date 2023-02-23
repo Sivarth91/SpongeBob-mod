@@ -1,21 +1,12 @@
 package fr.sivarth.sbm.world.biome;
 
 import fr.sivarth.sbm.SBM;
-import fr.sivarth.sbm.entity.ModEntityTypes;
 import fr.sivarth.sbm.world.biome.custom.BikiniBottomBiome;
-import net.minecraft.client.audio.BackgroundMusicTracks;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.util.SoundEvents;
 import net.minecraft.world.biome.*;
-import net.minecraft.world.gen.feature.structure.StructureFeatures;
-import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
-import java.util.function.Supplier;
 
 public class ModBiomes {
 
