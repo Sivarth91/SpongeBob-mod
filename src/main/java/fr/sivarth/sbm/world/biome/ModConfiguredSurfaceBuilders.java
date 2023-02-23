@@ -12,16 +12,22 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 
 public class ModConfiguredSurfaceBuilders {
 
-    private static <SC extends ISurfaceBuilderConfig>ConfiguredSurfaceBuilder<SC> register(String name, ConfiguredSurfaceBuilder<SC> csb) {
-        return WorldGenRegistries.register(WorldGenRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(SBM.MODID ,name), csb);
-    }
-
     public static ConfiguredSurfaceBuilder<?> BIKINI_BOTTOM_SURFACE = register("bikini_bottom_surface", SurfaceBuilder.DEFAULT.configured(new SurfaceBuilderConfig(
         Blocks.SAND.defaultBlockState(), // top block (like grass)
         Blocks.SANDSTONE.defaultBlockState(), // under block (like dirt)
         ModBlocks.ALUMINIUM_WALL_BLOCK.get().defaultBlockState() // third block (like stone)
     )));
 
+    /**
+     *
+     * @param name
+     * @param csb
+     * @return configured surface builder for your biome
+     * @param <SC>
+     */
+    private static <SC extends ISurfaceBuilderConfig>ConfiguredSurfaceBuilder<SC> register(String name, ConfiguredSurfaceBuilder<SC> csb) {
+        return WorldGenRegistries.register(WorldGenRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(SBM.MODID ,name), csb);
+    }
 
 
 }
