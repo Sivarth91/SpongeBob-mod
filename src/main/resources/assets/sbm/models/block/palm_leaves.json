@@ -1,6 +1,6 @@
 {
     "parent": "block/leaves",
     "textures": {
-        "all": "sbm:block/pineapple_leaves"
+        "all": "sbm:block/palm_leaves"
     }
 }
