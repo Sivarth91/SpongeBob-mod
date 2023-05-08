@@ -24,8 +24,6 @@ public class ModItems {
     public static final RegistryObject<Item> ALUMINIUM_INGOT = ITEMS.register("aluminium_ingot", () -> new Item(new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
     public static final RegistryObject<Item> ALUMINIUM_PLATE = ITEMS.register("aluminium_plate", () -> new Item(new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
     public static final RegistryObject<Item> BANKNOTE = ITEMS.register("banknote", () -> new Item(new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
-    public static final RegistryObject<Item> CASH_REGISTER_SCREEN = ITEMS.register("cash_register_screen", () -> new Item(new Item.Properties().stacksTo(16).tab(ModItemGroup.SBM_ITEM_GROUP)));
-    public static final RegistryObject<Item> CASH_REGISTER_BUTTON = ITEMS.register("cash_register_button", () -> new Item(new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
     public static final RegistryObject<Item> HOTPLATE = ITEMS.register("hotplate", () -> new Item(new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
     public static final RegistryObject<Item> PAVING_STONE = ITEMS.register("paving_stone", () -> new Item(new Item.Properties().stacksTo(64).tab(ModItemGroup.SBM_ITEM_GROUP)));
     public static final RegistryObject<Item> KRABBY_PATTY_SECRET_RECIPE = ITEMS.register("krabby_patty_secret_recipe", () -> new Item(new Item.Properties().stacksTo(1).tab(ModItemGroup.SBM_ITEM_GROUP)));
