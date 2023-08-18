@@ -25,7 +25,7 @@ import javax.annotation.Nullable;
 
 public class SpongeBobEntity extends AnimalEntity {
 
-    private static final Ingredient TEMPTATION_INGREDIENT = Ingredient.of(ModItems.SPATULA.get());
+    private static final Ingredient TEMPTATION_INGREDIENT = Ingredient.of(ModItems.ALUMINIUM_INGOT.get());
     private int spongeBobTimer;
 
     public SpongeBobEntity(EntityType<? extends AnimalEntity> type, World world) {
