@@ -4,7 +4,6 @@ import fr.sivarth.sbm.block.ModBlocks;
 import fr.sivarth.sbm.entity.ModEntityTypes;
 import fr.sivarth.sbm.entity.custom.*;
 import fr.sivarth.sbm.item.ModItems;
-import fr.sivarth.sbm.tileentity.ModTileEntities;
 import fr.sivarth.sbm.world.biome.ModBiomes;
 import fr.sivarth.sbm.world.gen.ModBiomeGeneration;
 import net.minecraft.client.renderer.RenderType;
@@ -29,7 +28,6 @@ public class SBM {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.ITEMS.register(bus);
         ModBlocks.BLOCKS.register(bus);
-        ModTileEntities.TILE_ENTITIES.register(bus);
         ModEntityTypes.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
         ModBiomes.registerBiomes(bus);
     }
@@ -44,7 +42,6 @@ public class SBM {
             GlobalEntityTypeAttributes.put(ModEntityTypes.PATRICK.get(), PatrickEntity.setCustomAttributes().build());
             GlobalEntityTypeAttributes.put(ModEntityTypes.GARY.get(), GaryEntity.setCustomAttributes().build());
             GlobalEntityTypeAttributes.put(ModEntityTypes.PLANKTON.get(), PlanktonEntity.setCustomAttributes().build());
-            GlobalEntityTypeAttributes.put(ModEntityTypes.SQUIDWARD.get(), SquidwardEntity.setCustomAttributes().build());
         });
     }
 
@@ -61,8 +58,9 @@ public class SBM {
             RenderTypeLookup.setRenderLayer(ModBlocks.ALUMINIUM_TRAPDOOR.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.REINFORCED_ALUMINIUM_DOOR.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.REINFORCE_ALUMINIUM_TRAPDOOR.get(), RenderType.cutout());
-            RenderTypeLookup.setRenderLayer(ModBlocks.TELEVISION.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.PALM_SAPLING.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.PALM_LEAVES.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.CORAL_PLANKS_FENCE.get(), RenderType.cutout());
 
             ModBiomeGeneration.generateBiomes();
         });
