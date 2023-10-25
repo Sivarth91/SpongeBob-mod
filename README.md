@@ -1,11 +1,13 @@
 # SPONGE BOB MOD
 
+## This mod was discontinued after a year of development. it wasn't compiled into a jar, so you can't play it. 
+
 This mod adds a lot of stuff related to spongebob universe. You can see all the features in the documentation.
 
 Support : Github and Discord
    
- - https://github.com/Sivarth91
- - https://discord.gg/aAwmwpASA8
+ - https://github.com/Sivarth91/SpongeBob-mod/issues
+ - Sivarth#1871
 
 Installation
 ------------
