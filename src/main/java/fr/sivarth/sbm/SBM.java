@@ -6,6 +6,7 @@ import fr.sivarth.sbm.entity.custom.*;
 import fr.sivarth.sbm.item.ModItems;
 import fr.sivarth.sbm.world.biome.ModBiomes;
 import fr.sivarth.sbm.world.gen.ModBiomeGeneration;
+import fr.sivarth.sbm.world.structure.ModStructures;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
@@ -30,6 +31,7 @@ public class SBM {
         ModBlocks.BLOCKS.register(bus);
         ModEntityTypes.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
         ModBiomes.registerBiomes(bus);
+        ModStructures.registerStructures(bus);
     }
 
     /**
@@ -42,6 +44,8 @@ public class SBM {
             GlobalEntityTypeAttributes.put(ModEntityTypes.PATRICK.get(), PatrickEntity.setCustomAttributes().build());
             GlobalEntityTypeAttributes.put(ModEntityTypes.GARY.get(), GaryEntity.setCustomAttributes().build());
             GlobalEntityTypeAttributes.put(ModEntityTypes.PLANKTON.get(), PlanktonEntity.setCustomAttributes().build());
+
+            ModStructures.setupStructures();
         });
     }
 
